@@ -36,6 +36,7 @@ class WarpForm extends MenuForm {
     
     $position = $this->plugin->getWarp($text);
     $this->plugin->getServer()->loadLevel($this->plugin->config->get($text)["getLevel"]);
+    $g->teleport(Server::getInstance()->getLevelByName($this->plugin->config->get($text)["getLevel"])->getSpawnLocation());
     $g->teleport($position);
     $g->sendMessage("§f» §a{$text} §7Adlı Yere Işınlandın!");
     });
