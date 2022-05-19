@@ -1,0 +1,47 @@
+---
+ # ENG: Sets the database where the teleport points will be stored.
+ # TUR: Işınlanma noktalarının depo edileceği veritabanını ayarlar. ("yaml" yada "sqlite3")
+database: "yaml"
+
+ # ENG: Sets subcommands in-game.
+ # TUR: Oyun içerisindeki alt komutları ayarlar.
+commands:
+  warp.create.commands: ["olustur", "create"]
+  warp.delete.commands: ["sil", "delete"]
+  warp.list.commands: ["liste", "list"]
+  warp.usage.commands: ["yardim", "help"]
+ 
+ # ENG: Sets the authority to use commands.
+ # TUR: Komutları kullanma yetkisini ayarlar.
+permissions:
+  warp.create.permission: "pocketmine.group.operator"
+  warp.delete.permission: "pocketmine.group.operator"
+  warp.list.permission: "pocketmine.group.operator"
+
+ # ENG: Sets the messages to be sent to the player in the game.
+ # TUR: Oyun içerisinde oyuncuya gönderilecek mesajları ayarlar.
+messages:
+  no.have.permission: "§f» §cBu Komutu Kullanmaya Yetkiniz Yok!"
+  warp.enable: "§aWarp Aktif Edildi!"
+  warp.disable: "§aWarp De-Aktif Edildi!"
+  warp.usage: "§f» §cKullanım: /warp [olustur-sil-liste]"
+  warp.list.succes: "§f» §aIşınlanma Noktaları: {warp_name}"
+  warp.list.error: "§f» §cHiç Işınlanma Noktası Yok!"
+  warp.list.output: "§f[§a{warp_name}§r§f]"
+  warp.create.usage: "§f» §cKullanım: /warp olustur [warp-adi]"
+  warp.create.succes: "§f» §f{warp_name} §r§aAdındaki Işınlanma Noktası Başarıyla Oluşturuldu!"
+  warp.create.failed: "§f» §e{warp_name} §r§cAdında Bir Işınlanma Noktası Zaten Var!"
+  warp.create.error: "§f» §3Işınlanma Noktası Oluşturulurken Bir Hata Oluştu!"
+  warp.delete.usage: "§f» §cKullanım: /warp delete [warp-adi]"
+  warp.delete.succes: "§f» §f{warp_name} §r§aAdındaki Işınlanma Noktası Başarıyla Silindi!"
+  warp.delete.failed: "§f» §e{warp_name} §r§cAdında Işınlanma Noktası Bulunamadı!"
+  warp.delete.error: "§f» §cIşınlanma Notkası Silinirken Bir Hata Oluştu!"
+  warp.teleport.succes: "§f» §f{warp_name} §r§aAdlı Noktaya Işınlandın!"
+  warp.teleport.failed: "§f» §e{$warp_name} §r§cAdlı Noktanın Dünyası Bulunamadı!"
+  warp.teleport.error: "§f» §e{warp_name} §r§cAdlı Noktaya Işınlanırken Bir Hata Oluştu!"
+ui:
+  title: "§8Işınlanma Menüsü"
+  warps: "§a{number} §7Işınlanma Noktası Aşağı Listelendi!"
+  no.warps: "§cHiç Işınlanma Noktası Yok!"
+  button: "§8» §8{warp_name} §r§8«\n§a{number} §8Oyuncu Oynuyor!"
+...
