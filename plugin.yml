@@ -1,23 +1,6 @@
 name: Advanced-Warp
 main: ArdaaArslann\WarpMain
-version: 2.0
+api: 4.0.0
+version: 2.1
 author: ArdaaArslann
-api: 3.15.2+dev
-commands:
-  warp:
-    description: Işınlanma Yerlerini Menüye Listeler.
-  warplist:
-    description: Işınlanma Yerlerini Listeler.
-  setwarp:
-    description: Işınlanma Yeri Oluşturur.
-  delwarp:
-    description: Işınlanma Noktasını Siler.
-permissions:
-  warp.command:
-    default: true
-  warplist.command:
-    default: op
-  setwarp.command:
-    default: op
-  delwarp.command:
-    default: op
+website: https://discord.gg/agonynw
